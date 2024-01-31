@@ -1,0 +1,15 @@
+syntax="proto3";
+
+option go_package = "github.com/dolefir/refresh-hash/gen";
+
+service HashService {
+    rpc GetHash(GetHashRequest) returns (GetHashResponse); 
+}
+
+message GetHashRequest {
+    string uid = 1;
+}
+
+message GetHashResponse {
+    string uid = 1;
+}

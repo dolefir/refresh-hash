@@ -1,0 +1,13 @@
+api-server:
+  http:
+    listen-address: :8080
+    graceful-timeout: 8m #min
+    network: tcp
+    address-grpc: :8081
+ticker:
+  timer: 5m #min
+  time-out: 100s #sec
+logger:
+  mode: dev
+  log-format: text
+  log-level: debug
